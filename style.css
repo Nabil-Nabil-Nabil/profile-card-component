@@ -1,0 +1,119 @@
+:root {
+    /* Primary */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+/* Global Style */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 48vw bottom 40vh, left 45vw top 44vh;
+    background-color: hsl(185, 75%, 39%);
+    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Style ------------------------------ */
+.card {
+    margin: 1.5rem;
+    max-width: 20.4375rem;
+    border-radius: 1rem;
+
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Profile ------------------------------ */
+.card .profile {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* Profile Name And Location */
+.card .profile .name-and-location{
+    margin-top: 4.5rem;
+    text-align: center;
+}
+
+/* Profile Name */
+.card .profile .name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+.card .profile .name span{
+    color: var(--Dark-gray);
+    
+}
+
+/* Location */
+.card .profile .location {
+    margin-top: .5rem;
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+
+/* Profile Image */
+.avatar-img {
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Bottom Numbers ------------------------------------------------------------ */
+.card .numbers {
+    background-color: white;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--Dark-grayish-blue);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem 0;
+}
+
+.card .numbers li {
+    text-align: center;
+}
+
+/* Numbers */
+.card .numbers h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+/* Texts */
+.card .numbers p {
+    margin-top: .4rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+}
